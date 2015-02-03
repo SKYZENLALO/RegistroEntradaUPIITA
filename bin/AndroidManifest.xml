@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.develops.capiz.registroentradaupiita"
+    android:versionCode="1"
+    android:versionName="1.0" >
+
+    <uses-permission android:name="android.permission.INTERNET"/>
+    
+    <uses-sdk
+        android:minSdkVersion="8"
+        android:targetSdkVersion="21" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/ic_launcher"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme" >
+        <activity
+            android:name=".RegistroAlumno"
+            android:label="Nuevo Registro" />
+        <activity
+            android:name=".DecoderActivity"
+            android:label="Lector QR" />
+        <activity
+            android:name=".AlertMessage"
+            android:label="Atención" />
+        <activity
+            android:name=".ListaUsuarios"
+            android:label="Usuarios disponibles" />
+        <activity
+            android:name=".SalaChat"
+            android:label="Chat Zone" />
+        <activity
+            android:name=".WelcomeAdmin"
+            android:label="Welcome" />
+        <activity
+            android:name=".MainActivityChat"
+            android:label="Chat" />
+        <activity
+            android:name=".GrabStudentInfo"
+            android:label="Registro" />
+        <activity
+            android:name=".Admins"
+            android:label="Admins" />
+        <activity
+            android:name=".GuardianManager"
+            android:label="Admin Manager" />
+        <activity
+            android:name=".Registro"
+            android:label="Registro" />
+        <activity
+            android:name=".Mensaje"
+            android:label="Mensaje de Alerta"
+            android:theme="@android:style/Theme.Dialog" />
+        <activity
+            android:name=".ValidaRegistro"
+            android:label="Validar Registro" />
+        <activity
+            android:name=".MainActivity"
+            android:label="@string/app_name" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>

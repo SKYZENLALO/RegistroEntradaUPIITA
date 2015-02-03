@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">RegistroEntradaUPIITA</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="inicio">UPIITA - IPN</string>
+    <string name="bienvenido">Bienvenido</string>
+    <string name="header_main1">Identifíquese</string>
+    <string name="usr_name">Nombre</string>
+    <string name="usr_psswd">Contraseña</string>
+    <string name="go">Ingresar</string>
+    <string name="Registro">Registrar</string>
+    <string name="header2">¿Eres Administrador?</string>
+    <string name="yes">Sí</string>
+    <string name="no">NO </string>
+    <string name="usr_boleta">Boleta</string>
+    <string name="header3">Master Solutions</string>
+    <string name="header_register1">Nuevo Registro</string>
+    <string name="usr_psswd_repeat">Repita Contraseña</string>
+    <string name="go2">Registrar</string>
+    <string name="icon_desc">UPIITA-IPN</string>
+    <string name="error_icon">Error en campo</string>
+    <string name="proceder_registro">Registro</string>
+    <string name="ver_guardianes">Ver Admins</string>
+    <string name="admins_main_label">Administradores</string>
+    <string name="carrera">Carrera</string>
+    <string name="correo">Correo</string>
+    <string name="escuela">Escuela</string>
+    
+    <string name="header">¡IPN hasta la Victoria!</string>
+    <string name="error">Error en los parámetros</string>
+    <string name="aceptar">Aceptar</string>
+    <string name="enviar">Enviar</string>
+    <string name="label1">¿Cuál es su nombre de usuario?</string>
+    <string name="label2">¿Cuál es su contraseña?</string>
+    <string name="alert_label_1">Me gustas tú</string>
+    <string name="prueba">Este es un texto de prueba.</string>
+    <string name="back">Regresar</string>
+    <string name="invita_a_escribir">Escriba aquí.</string>
+    <string name="bienvenida">Bienvenido</string>
+    <string name="entrar">Entrar</string>
+    <string name="alert_header_1">Usuario</string>
+    <string name="alert_header_2">Contraseña</string>
+    <string name="chat_zone">Sala de Chat</string>
+    <string name="no_usrs_message">¿A quien mandará mensaje?</string>
+    <string name="action_settings">Ver Usuarios</string>
+    <string name="nuevo_registro_alumno">Ingresar Registro</string>
+    <string name="inicia_chat">Iniciar chat</string>
+    <string name="inicia_lector_qr">Iniciar Lector QR</string>
+    <string name="inicia_registro_alumno">Alumno Nuevo</string>
+    
+
+</resources>

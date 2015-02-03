@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#333333" >
+
+    <ImageView
+        android:id="@+id/poli_logo"
+        android:layout_width="110sp"
+        android:layout_height="150sp"
+        android:layout_centerHorizontal="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="12sp"
+        android:layout_marginStart="12sp"
+        android:layout_marginTop="20sp"
+        android:contentDescription="@string/hello_world"
+        android:scaleType="centerCrop"
+        android:src="@drawable/ipn_blanco" />    
+
+    <Button
+        android:id="@+id/aceptar"
+        android:layout_width="match_parent"
+        android:layout_height="40sp"
+        android:layout_below="@+id/poli_logo"        
+        android:layout_margin="20sp"
+        android:background="@drawable/button_animation"
+        android:maxLines="1"
+        android:text="@string/entrar"
+        android:textColor="#c8c8c8"
+        android:textSize="18sp"
+        android:typeface="normal" />
+
+</RelativeLayout>

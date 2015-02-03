@@ -1,0 +1,316 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+
+        <ImageView
+            android:id="@+id/logo3"
+            android:layout_width="80sp"
+            android:layout_height="68sp"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginBottom="15sp"
+            android:layout_marginEnd="10sp"
+            android:layout_marginRight="10sp"
+            android:layout_marginTop="15sp"
+            android:contentDescription="@string/icon_desc"
+            android:fontFamily="sans-serif-condensed"
+            android:src="@drawable/upiita_black" />
+
+        <TextView
+            android:id="@+id/header_register1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_marginLeft="20sp"
+            android:layout_marginStart="20sp"
+            android:layout_marginTop="35sp"
+            android:fontFamily="sans-serif-condensed"
+            android:textStyle="bold"
+            android:text="@string/header_register1"
+            android:textSize="23sp" />
+
+        <TextView
+            android:id="@+id/error_message"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_alignTop="@+id/header_register1"
+            android:layout_below="@+id/logo3"
+            android:layout_marginEnd="12sp"
+            android:layout_marginLeft="12sp"
+            android:layout_marginRight="12sp"
+            android:layout_marginStart="12sp"
+            android:layout_toEndOf="@+id/header_register1"
+            android:layout_toRightOf="@+id/header_register1"
+            android:fontFamily="sans-serif-condensed"
+            android:textStyle="italic" />
+
+        <RelativeLayout
+            android:id="@+id/container"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/header_register1"
+            android:layout_marginEnd="42sp"
+            android:layout_marginLeft="20sp"
+            android:layout_marginRight="42sp"
+            android:layout_marginStart="20sp"
+            android:layout_marginTop="35sp"
+            android:layout_toEndOf="@+id/header_login_register1"
+            android:layout_toRightOf="@+id/header_login_register1"
+            android:visibility="invisible" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="20sp"
+                android:layout_marginRight="20sp"
+                android:layout_toLeftOf="@+id/error_icon0"
+                android:layout_toStartOf="@+id/error_icon0"
+                android:fontFamily="sans-serif-condensed"
+                android:text="@string/error_icon"
+                android:textSize="12sp"
+                android:textStyle="italic" />
+
+            <ImageView
+                android:id="@+id/error_icon0"
+                android:layout_width="20sp"
+                android:layout_height="20sp"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentRight="true"
+                android:contentDescription="@string/error_icon"
+                android:src="@drawable/equis" />
+        </RelativeLayout>
+
+        <TextView
+            android:id="@+id/header_login_register1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/header_register1"
+            android:layout_alignStart="@+id/header_register1"
+            android:layout_below="@+id/header_register1"
+            android:layout_marginLeft="20sp"
+            android:layout_marginStart="20sp"
+            android:layout_marginTop="35sp"
+            android:fontFamily="sans-serif-condensed"
+            android:text="@string/usr_name"
+            android:textSize="16sp" />
+
+        <EditText
+            android:id="@+id/input_name_register1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/header_login_register1"
+            android:layout_alignStart="@+id/header_login_register1"
+            android:layout_below="@+id/header_login_register1"
+            android:layout_marginEnd="42sp"
+            android:layout_marginRight="42sp"
+            android:layout_marginTop="8sp"
+            android:inputType="textPersonName"
+            android:textSize="16sp" />
+
+        <TextView
+            android:id="@+id/header_login_register_boleta"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/header_register1"
+            android:layout_alignStart="@+id/header_register1"
+            android:layout_below="@+id/input_name_register1"
+            android:layout_marginLeft="20sp"
+            android:layout_marginStart="20sp"
+            android:layout_marginTop="10sp"
+            android:fontFamily="sans-serif-condensed"
+            android:text="@string/usr_boleta"
+            android:textSize="16sp" />
+
+        <RelativeLayout
+            android:id="@+id/container1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/input_name_register1"
+            android:layout_marginEnd="42sp"
+            android:layout_marginLeft="20sp"
+            android:layout_marginRight="42sp"
+            android:layout_marginStart="20sp"
+            android:layout_marginTop="10sp"
+            android:layout_toEndOf="@+id/header_login_register_boleta"
+            android:layout_toRightOf="@+id/header_login_register_boleta"
+            android:visibility="invisible" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="20sp"
+                android:layout_marginRight="20sp"
+                android:layout_toLeftOf="@+id/error_icon"
+                android:layout_toStartOf="@+id/error_icon"
+                android:fontFamily="sans-serif-condensed"
+                android:text="@string/error_icon"
+                android:textSize="12sp"
+                android:textStyle="italic" />
+
+            <ImageView
+                android:id="@+id/error_icon"
+                android:layout_width="20sp"
+                android:layout_height="20sp"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentRight="true"
+                android:contentDescription="@string/error_icon"
+                android:src="@drawable/equis" />
+        </RelativeLayout>
+
+        <EditText
+            android:id="@+id/input_boleta_register1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/header_login_register1"
+            android:layout_alignStart="@+id/header_login_register1"
+            android:layout_below="@+id/header_login_register_boleta"
+            android:layout_marginEnd="42sp"
+            android:layout_marginRight="42sp"
+            android:layout_marginTop="8sp"
+            android:inputType="textPersonName"
+            android:textSize="16sp" />
+
+        <TextView
+            android:id="@+id/header_login_register2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/input_name_register1"
+            android:layout_alignStart="@+id/input_name_register1"
+            android:layout_below="@+id/input_boleta_register1"
+            android:layout_marginTop="10sp"
+            android:fontFamily="sans-serif-condensed"
+            android:text="@string/usr_psswd"
+            android:textSize="16sp" />
+
+        <RelativeLayout
+            android:id="@+id/container2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/input_boleta_register1"
+            android:layout_marginEnd="42sp"
+            android:layout_marginLeft="20sp"
+            android:layout_marginRight="42sp"
+            android:layout_marginStart="20sp"
+            android:layout_marginTop="10sp"
+            android:layout_toEndOf="@+id/header_login_register2"
+            android:layout_toRightOf="@+id/header_login_register2"
+            android:visibility="invisible" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="20sp"
+                android:layout_marginRight="20sp"
+                android:layout_toLeftOf="@+id/error_icon2"
+                android:layout_toStartOf="@+id/error_icon2"
+                android:fontFamily="sans-serif-condensed"
+                android:text="@string/error_icon"
+                android:textSize="12sp"
+                android:textStyle="italic" />
+
+            <ImageView
+                android:id="@+id/error_icon2"
+                android:layout_width="20sp"
+                android:layout_height="20sp"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentRight="true"
+                android:contentDescription="@string/error_icon"
+                android:src="@drawable/equis" />
+        </RelativeLayout>
+
+        <EditText
+            android:id="@+id/input_psswd_register1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/header_login_register2"
+            android:layout_alignStart="@+id/header_login_register2"
+            android:layout_below="@+id/header_login_register2"
+            android:layout_marginEnd="42sp"
+            android:layout_marginRight="42sp"
+            android:layout_marginTop="8sp"
+            android:inputType="textPassword"
+            android:textSize="16sp" />
+
+        <TextView
+            android:id="@+id/header_login_register3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/input_psswd_register1"
+            android:layout_alignStart="@+id/input_psswd_register1"
+            android:layout_below="@+id/input_psswd_register1"
+            android:layout_marginTop="10sp"
+            android:fontFamily="sans-serif-condensed"
+            android:text="@string/usr_psswd_repeat"
+            android:textSize="16sp" />
+
+        <RelativeLayout
+            android:id="@+id/container3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/input_psswd_register1"
+            android:layout_marginEnd="42sp"
+            android:layout_marginLeft="20sp"
+            android:layout_marginRight="42sp"
+            android:layout_marginStart="20sp"
+            android:layout_marginTop="10sp"
+            android:layout_toEndOf="@+id/header_login_register3"
+            android:layout_toRightOf="@+id/header_login_register3"
+            android:visibility="invisible" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="20sp"
+                android:layout_marginRight="20sp"
+                android:layout_toLeftOf="@+id/error_icon3"
+                android:layout_toStartOf="@+id/error_icon3"
+                android:fontFamily="sans-serif-condensed"
+                android:text="@string/error_icon"
+                android:textSize="12sp"
+                android:textStyle="italic" />
+
+            <ImageView
+                android:id="@+id/error_icon3"
+                android:layout_width="20sp"
+                android:layout_height="20sp"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentRight="true"
+                android:contentDescription="@string/error_icon"
+                android:src="@drawable/equis" />
+        </RelativeLayout>
+
+        <EditText
+            android:id="@+id/input_psswd_register2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/header_login_register3"
+            android:layout_alignStart="@+id/header_login_register3"
+            android:layout_below="@+id/header_login_register3"
+            android:layout_marginEnd="42sp"
+            android:layout_marginRight="42sp"
+            android:layout_marginTop="8sp"
+            android:inputType="textPassword"
+            android:textSize="16sp" />
+
+        <Button
+            android:id="@+id/go2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignEnd="@+id/input_psswd_register2"
+            android:layout_alignRight="@+id/input_psswd_register2"
+            android:layout_below="@+id/input_psswd_register2"
+            android:layout_marginTop="10sp"
+            android:fontFamily="sans-serif-condensed"
+            android:text="@string/go2"
+            android:textSize="16sp" />
+    </RelativeLayout>
+
+</ScrollView>

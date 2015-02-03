@@ -1,0 +1,124 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+
+        <ImageView
+            android:id="@+id/logo"
+            android:layout_width="80sp"
+            android:layout_height="68sp"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginEnd="10sp"
+            android:layout_marginRight="10sp"
+            android:layout_marginTop="15sp"
+            android:contentDescription="@string/icon_desc"
+            android:src="@drawable/upiita_black" />
+
+        <TextView
+            android:id="@+id/header_main1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20sp"
+            android:layout_marginStart="20sp"
+            android:layout_marginTop="35sp"
+            android:fontFamily="sans-serif-condensed"
+            android:textStyle="bold"
+            android:text="@string/header_main1"
+            android:textSize="23sp" />
+
+        <TextView
+            android:id="@+id/header_login1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/header_main1"
+            android:layout_alignStart="@+id/header_main1"
+            android:layout_below="@+id/header_main1"
+            android:layout_marginTop="35sp"
+            android:text="@string/usr_name"
+            android:fontFamily="sans-serif-condensed"
+            android:textSize="16sp" />
+
+        <EditText
+            android:id="@+id/input_box1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/header_login1"
+            android:layout_alignStart="@+id/header_login1"
+            android:layout_below="@+id/header_login1"
+            android:layout_marginEnd="100sp"
+            android:layout_marginRight="100sp"
+            android:layout_marginTop="8sp"
+            android:inputType="textPersonName"
+            android:textSize="16sp" />
+
+        <TextView
+            android:id="@+id/header_login2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/input_box1"
+            android:layout_alignStart="@+id/input_box1"
+            android:layout_below="@+id/input_box1"
+            android:layout_marginTop="20sp"
+            android:fontFamily="sans-serif-condensed"
+            android:text="@string/usr_psswd"
+            android:textSize="16sp" />
+
+        <EditText
+            android:id="@+id/input_box2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/header_login2"
+            android:layout_alignStart="@+id/header_login2"
+            android:layout_below="@+id/header_login2"
+            android:layout_marginEnd="100sp"
+            android:layout_marginRight="100sp"
+            android:layout_marginTop="8sp"
+            android:inputType="textPassword"
+            android:textSize="16sp" />
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignEnd="@+id/input_box2"
+            android:layout_alignLeft="@+id/input_box2"
+            android:layout_alignRight="@+id/input_box2"
+            android:layout_alignStart="@+id/input_box2"
+            android:layout_below="@+id/input_box2" >
+
+            <Button
+                android:id="@+id/go"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20sp"
+                android:layout_toEndOf="@+id/center"
+                android:layout_toRightOf="@+id/center"
+            android:fontFamily="sans-serif-condensed"
+                android:text="@string/go"
+                android:textSize="16sp" />
+
+            <TextView
+                android:id="@+id/center"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true" />
+
+            <Button
+                android:id="@+id/registro"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20sp"
+                android:layout_toLeftOf="@+id/center"
+                android:layout_toStartOf="@+id/center"
+            android:fontFamily="sans-serif-condensed"
+                android:text="@string/Registro"
+                android:textSize="16sp" />
+        </RelativeLayout>
+    </RelativeLayout>
+
+</ScrollView>

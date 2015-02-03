@@ -1,0 +1,75 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+
+        <ImageView
+            android:id="@+id/logo_guards_manager"
+            android:layout_width="80sp"
+            android:layout_height="68sp"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginEnd="10sp"
+            android:layout_marginRight="10sp"
+            android:layout_marginTop="15sp"
+            android:contentDescription="@string/icon_desc"
+            android:src="@drawable/upiita_black" />
+
+        <TextView
+            android:id="@+id/header_guards_manager"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginLeft="20sp"
+            android:layout_marginRight="20sp"
+            android:layout_marginStart="20sp"
+            android:layout_marginTop="42sp"
+            android:text="@string/bienvenido"
+            android:fontFamily="sans-serif-condensed"
+            android:textSize="23sp"
+            android:textStyle="bold" />
+
+        <Button
+            android:id="@+id/leftButton_guards_manager"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_alignTop="@+id/rightButton_guards_manager"
+            android:layout_marginLeft="20sp"
+            android:layout_marginStart="20sp"
+            android:layout_toLeftOf="@+id/pivote_guards_manager"
+            android:layout_toStartOf="@+id/pivote_guards_manager"
+            android:fontFamily="sans-serif-condensed"
+            android:text="@string/proceder_registro" />
+
+        <TextView
+            android:id="@+id/pivote_guards_manager"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/header_guards_manager"
+            android:layout_centerHorizontal="true"
+            android:fontFamily="sans-serif-condensed"
+            android:layout_marginTop="20sp" />
+
+        <Button
+            android:id="@+id/rightButton_guards_manager"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/header_guards_manager"
+            android:layout_marginEnd="20sp"
+            android:layout_marginRight="20sp"
+            android:layout_marginTop="20sp"
+            android:layout_toEndOf="@+id/pivote_guards_manager"
+            android:layout_toRightOf="@+id/pivote_guards_manager"
+            android:fontFamily="sans-serif-condensed"
+            android:text="@string/ver_guardianes" />
+    </RelativeLayout>
+
+</ScrollView>

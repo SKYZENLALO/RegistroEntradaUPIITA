@@ -1,0 +1,50 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:id="@+id/admins_panel"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+
+        <TextView
+            android:id="@+id/admins_bkgd"
+            android:layout_width="match_parent"
+            android:layout_height="60sp"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginLeft="20sp"
+            android:layout_marginStart="20sp"
+            android:layout_marginTop="30sp"
+            android:layout_toLeftOf="@+id/admins_logo"
+            android:layout_toStartOf="@+id/admins_logo"
+            android:fontFamily="sans-serif-condensed"
+            android:text="@string/admins_main_label"
+            android:textSize="23sp"
+            android:textStyle="bold" />
+
+        <ImageView
+            android:id="@+id/admins_logo"
+            android:layout_width="80sp"
+            android:layout_height="68sp"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginEnd="10sp"
+            android:layout_marginRight="10sp"
+            android:layout_marginTop="15sp"
+            android:contentDescription="@string/icon_desc"
+            android:src="@drawable/upiita_black" />
+    </RelativeLayout>
+
+    <ListView
+        android:id="@+id/admin_list"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fontFamily="sans-serif-condensed"
+        android:listSelector="#d35dea" />
+
+</LinearLayout>

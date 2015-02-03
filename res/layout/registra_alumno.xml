@@ -1,0 +1,220 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <RelativeLayout
+        android:id="@+id/registrarEncargado"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".MainActivity" >
+
+        <TextView
+            android:id="@+id/tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Boleta" />
+
+        <EditText
+            android:id="@+id/boleta"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_below="@+id/tv" />
+        
+        <TextView
+            android:id="@+id/nombreTV"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/boleta"
+            android:text="Nombre" />
+
+        <EditText
+            android:id="@+id/nombre"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_below="@+id/nombreTV" />
+
+        <TextView
+            android:id="@+id/aPaternoTV"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/nombre"
+            android:text="Apellido Paterno"
+            android:textColor="#CC0000" />
+
+        <EditText
+            android:id="@+id/aPaterno"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_below="@+id/aPaternoTV" />
+
+        <TextView
+            android:id="@+id/aMaternoTV"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/aPaterno"
+            android:text="Apellido Materno"
+            android:textColor="#FF8800" />
+
+        <EditText
+            android:id="@+id/aMaterno"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_below="@+id/aMaternoTV" />
+
+        <TextView
+            android:id="@+id/carreraTV"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/aMaterno"
+            android:text="Carrera"
+            android:textColor="#669900" />
+
+        <EditText
+            android:id="@+id/carrera"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_below="@+id/carreraTV" />
+
+        <TextView
+            android:id="@+id/correoTV"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/carrera"
+            android:text="Correo"
+            android:textColor="#9933CC" />
+
+        <EditText
+            android:id="@+id/correo"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_below="@+id/correoTV" />
+
+        <TextView
+            android:id="@+id/algo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/correo"
+            android:textColor="#0099CC"
+            android:text="Escuela" />
+
+        <EditText
+            android:id="@+id/escuela"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_below="@+id/algo" />
+        <!--
+        <TextView
+            android:id="@+id/horarioTV"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/telefono"
+            android:textColor="#FF4444"
+            android:text="Horario" />
+
+        <TimePicker
+            android:id="@+id/horario"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/horarioTV" >
+        </TimePicker>
+
+        <TextView
+            android:id="@+id/tareasTV"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/horario"
+            android:textColor="#FFBB33"
+            android:text="Tareas" />
+
+        <EditText
+            android:id="@+id/tareas"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_below="@+id/tareasTV" />
+
+        <TextView
+            android:id="@+id/ubicacionTV"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#99CC00"
+            android:layout_below="@+id/tareas"
+            android:text="Ubicacion" />
+
+        <EditText
+            android:id="@+id/ubicacion"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_below="@+id/ubicacionTV" />
+
+        <TextView
+            android:id="@+id/contrasenaTV"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/ubicacion"
+            android:textColor="#AA66CC"
+            android:text="Contraseña" />
+
+        <EditText
+            android:id="@+id/contrasena"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_below="@+id/contrasenaTV" />
+
+        <TextView
+            android:id="@+id/contrasenaCTV"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/contrasena"
+            android:textColor="#33B5E5"
+            android:text="Confirmar Contraseña" />
+
+        <EditText
+            android:id="@+id/contrasenaC"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_below="@+id/contrasenaCTV" />
+33B5E5
+AA66CC
+99CC00
+FFBB33
+FF4444
+0099CC
+9933CC
+669900
+FF8800
+CC0000
+!
+        -->
+
+        <Button
+            android:id="@+id/insertar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/escuela"
+            android:text="Insertar" />
+    </RelativeLayout>
+
+</ScrollView>

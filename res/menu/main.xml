@@ -1,0 +1,24 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="com.capiz_solutions.components.MainActivity" >
+
+    <item
+        android:id="@+id/ingresar_registro"
+        android:orderInCategory="100"
+        android:title="@string/action_settings"
+        app:showAsAction="never"/>
+
+    <item
+        android:id="@+id/iniciar_chat"
+        android:orderInCategory="100"
+        android:title="@string/inicia_chat"
+        app:showAsAction="never"/>
+
+    <item
+        android:id="@+id/iniciar_registro_alumno"
+        android:orderInCategory="100"
+        android:title="@string/inicia_registro_alumno"
+        app:showAsAction="never"/>
+
+</menu>

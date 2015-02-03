@@ -1,0 +1,90 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+
+        <TextView
+            android:id="@+id/inner_header"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginLeft="20sp"
+            android:layout_marginStart="20sp"
+            android:layout_marginTop="40sp"
+            android:layout_toLeftOf="@+id/logo2"
+            android:layout_toStartOf="@+id/logo2"
+            android:text="@string/header2"
+            android:fontFamily="sans-serif-condensed"
+            android:textStyle="bold"
+            android:textSize="23sp" />
+
+        <ImageView
+            android:id="@+id/logo2"
+            android:layout_width="80sp"
+            android:layout_height="68sp"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginEnd="10sp"
+            android:layout_marginRight="10sp"
+            android:layout_marginTop="15sp"
+            android:contentDescription="@string/icon_desc"
+            android:src="@drawable/upiita_black" />
+
+        <Button
+            android:id="@+id/yes"
+            android:layout_width="85sp"
+            android:layout_height="65sp"
+            android:layout_below="@+id/inner_header"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="20sp"
+            android:text="@string/yes"
+            android:fontFamily="sans-serif-condensed"
+            android:textSize="16sp" />
+
+        <TextView
+            android:id="@+id/valida_pablo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/yes"
+            android:layout_marginEnd="32sp"
+            android:layout_marginLeft="20sp"
+            android:layout_marginRight="32sp"
+            android:layout_marginStart="20sp"
+            android:layout_marginTop="20sp"
+            android:text="@string/usr_psswd"
+            android:textSize="23sp"
+            android:fontFamily="sans-serif-condensed"
+            android:visibility="invisible" />
+
+        <EditText
+            android:id="@+id/pablo_psswd"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/valida_pablo"
+            android:layout_marginEnd="32sp"
+            android:layout_marginLeft="20sp"
+            android:layout_marginRight="32sp"
+            android:layout_marginStart="20sp"
+            android:layout_marginTop="8sp"
+            android:inputType="textPassword"
+            android:visibility="invisible" />
+
+        <Button
+            android:id="@+id/no"
+            android:layout_width="85sp"
+            android:layout_height="65sp"
+            android:layout_below="@+id/yes"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="20sp"
+            android:text="@string/no"
+            android:fontFamily="sans-serif-condensed"
+            android:textSize="16sp" />
+    </RelativeLayout>
+
+</ScrollView>

@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#333333"
+    android:orientation="vertical" >
+
+    <TextView
+        android:id="@+id/alert_header"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="52sp"
+        android:layout_marginRight="52sp"
+        android:layout_marginTop="32sp"
+        android:background="#008bed"
+        android:paddingBottom="10sp"
+        android:paddingEnd="20sp"
+        android:paddingLeft="12sp"
+        android:paddingRight="12sp"
+        android:paddingStart="12sp"
+        android:paddingTop="25sp"
+        android:text="@string/alert_label_1"
+        android:textColor="#ffffff"
+        android:textSize="32sp"
+        android:typeface="normal" />
+
+    <ScrollView
+        android:id="@+id/alert_body_container"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/alert_header"
+        android:layout_above="@+id/bottom_layout"
+        android:layout_marginBottom="12sp"
+        android:layout_marginTop="20sp" >
+
+        <LinearLayout
+            android:id="@+id/text_contaiener"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+            
+        <TextView
+            android:id="@+id/alert_body"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingBottom="20sp"
+            android:paddingEnd="20sp"
+            android:paddingLeft="20sp"
+            android:paddingRight="12sp"
+            android:paddingStart="20sp"
+            android:paddingTop="40sp"
+            android:text="@string/prueba"
+            android:textColor="#c8c8c8"
+            android:textSize="30sp"
+            android:typeface="normal" />
+        </LinearLayout>
+    </ScrollView>
+
+    <RelativeLayout
+        android:id="@+id/bottom_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginTop="12sp"
+        android:layout_marginBottom="24sp" >
+
+        <EditText
+            android:id="@+id/new_value"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/back"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_alignTop="@+id/back"
+            android:layout_marginEnd="10sp"
+            android:layout_marginRight="10sp"
+            android:layout_toLeftOf="@+id/back"
+            android:layout_toStartOf="@+id/back"
+            android:background="@drawable/edit_text_custom_2"
+            android:inputType="textMultiLine"
+            android:maxLines="2"
+            android:text="@string/invita_a_escribir"
+            android:paddingLeft="10sp"
+            android:paddingStart="10sp" />
+
+        <Button
+            android:id="@+id/back"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:background="@drawable/button_animation"
+            android:paddingBottom="4sp"
+            android:paddingEnd="15sp"
+            android:paddingLeft="5sp"
+            android:paddingRight="15sp"
+            android:paddingStart="5sp"
+            android:paddingTop="12sp"
+            android:text="@string/back"
+            android:textColor="#c8c8c8"
+            android:textSize="28sp" />
+    </RelativeLayout>
+
+</RelativeLayout>
